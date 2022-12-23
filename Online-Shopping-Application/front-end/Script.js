@@ -13,7 +13,7 @@ RegisterUser.addEventListener("submit", function(e){
         address:null
     }
 
-    fetch('http://localhost:8888/customers', {
+    fetch('http://localhost:8080/customers', {
         method:'POST',
         body:JSON.stringify(data),
         headers:{'Content-Type':'application/json'},
@@ -49,7 +49,7 @@ LoginUser.addEventListener("submit", function(e){
         role:"customer"
     }
 
-    fetch('http://localhost:8888/users/login', {
+    fetch('http://localhost:8080/users/login', {
         method:'POST',
         body:JSON.stringify(data),
         headers:{'Content-Type':'application/json'}
@@ -98,7 +98,7 @@ UpdateUser.addEventListener("submit", function(e){
 
     
 
-    fetch(`http://localhost:8888/customers/${mykey}`, {
+    fetch(`http://localhost:8080/customers/${mykey}`, {
         method:'PUT',
         headers:{'Content-Type':'application/json'},
         body:JSON.stringify(data),
@@ -132,7 +132,7 @@ e.preventDefault();
 
 const cId = document.getElementById("customerid").value; 
 
-fetch(`http://localhost:8888/customers/${cId}`)
+fetch(`http://localhost:8080/customers/${cId}`)
     .then(function(response){
         return response.json();
     }).then( (text) => {
@@ -152,7 +152,7 @@ document.getElementById('logout').addEventListener("click",function(){
 
     let mykey = localStorage.getItem("key");
 
-    fetch(`http://localhost:8888/users/logout?key=${mykey}`, {
+    fetch(`http://localhost:8080/users/logout?key=${mykey}`, {
         method:'DELETE',
         headers:{
             'Content-Type':'application/json',
