@@ -45,14 +45,9 @@ public class Product {
 	private Category category;
 
 	public Product(
-			@Size(min = 3, max = 25, message = "Product Name should contain min 3 character.") 
-			String productName,
-			@Min(value = 1, message = "Please Enter a valid price") 
-			Double price, 
-			String color,
-			String dimension,
-			String manufacturer, 
-			@Min(value = 1, message = "Please Enter a valid quantity.") Integer quantity,
+			@Size(min = 3, max = 25, message = "Product Name should contain min 3 character.") String productName,
+			@Min(value = 1, message = "Please Enter a valid price") Double price, String color, String dimension,
+			String manufacturer, @Min(value = 1, message = "Please Enter a valid quantity.") Integer quantity,
 			Category category) {
 		super();
 		this.productName = productName;
@@ -63,4 +58,12 @@ public class Product {
 		this.quantity = quantity;
 		this.category = category;
 	}
+	
+	
+
+	
+	
+	
+	
+	
 }
