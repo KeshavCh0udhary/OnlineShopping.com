@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./front-end/index.css">
+</head>
+<body>
+    
+    <div id="navContainer">
+        <div>
+            <h1>Customer Module</h1>
+        </div>
+        <div>
+            <button id="register">Register</button>
+            <button id="login">Login</button>
+            <button id="checkDetails">Check Details</button>
+            <button id="updateDetails">Update Details</button>
+            <button id="deleteAccount">Delete Account</button>
+            <button id="logout">Logout</button>
+        </div>
+
+    </div>
+
+    <div id="registerForm">
+        <form action="sumbit" id="form1">
+            <h3>Register Here</h3>
+            <input type="text" name="firstName" placeholder="Enter First Name" id="firstName" required>
+            <input type="text" name="lastName" placeholder="Enter Last Name" is="lastName">
+            <input type="number" name="mobileNumber" placeholder="Enter Mobile Number" id="mobileNumber" required>
+            <input type="password" name="password" placeholder="Enter Password" id="password" required>
+            <input type="email" name="email" placeholder="Enter Email" id="email" required>
+            <input type="submit" class="submitButton">
+        </form>
+    </div>
+    <div id="loginForm">
+        <form action="sumbit" id="form2">
+            <h3>Login Here</h3>
+            <input type="text" name="userId" placeholder="Enter Mobile Number " id="mobileNumber">
+            <input type="text" name="password" placeholder="Enter Password" id="password">
+            <input type="submit" class="submitButton">    
+        </form>
+    </div>
+    <div id="viewCustomer">
+        <form action="sumbit" id="viewForm">
+            <h3>View Customer Here</h3>
+            <input type="text" name="customerId" placeholder="Enter Customer Id " id="customerid" required>
+            
+            <input type="submit" class="submitButton">    
+        </form>
+    </div>
+
+    <div id="updateForm">
+        <form action="sumbit" id="form3">
+            <h3>Update Here</h3>
+            <input type="number" name="customerId" placeholder="Enter User Id" id="userId" required>
+            <input type="text" name="firstName" placeholder="Enter First Name" id="firstName" required>
+            <input type="text" name="lastName" placeholder="Enter Last Name" is="lastName" required>
+            <input type="text" name="mobileNumber" placeholder="Enter Mobile Number" id="mobileNumber" required>
+            <input type="text" name="password" placeholder="Enter Password" id="password" required>
+            <input type="email" name="email" placeholder="Enter Email" id="email" required>
+            <input type="submit" class="submitButton">  
+        </form>
+    </div>
+</body>
+</html>
+
+<script href ="front-end/Script.js"></script>
