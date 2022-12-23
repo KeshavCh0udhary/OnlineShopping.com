@@ -39,4 +39,3 @@ OnlineShopping.com is a rest API service for an Online Shopping Application. Thi
 -   Hibernate
 -   MySQL
 
-# Backend
